@@ -1,0 +1,19 @@
+{
+  "name": "My Default Codespace",
+  // You can specify a default image if you have a preference
+  "image": "mcr.microsoft.com/devcontainers/universal:2",
+
+  // Explicitly set lifecycle commands to null or an empty string
+  // to ensure no default scripts from the base image are run.
+  "postCreateCommand": null,
+  "postStartCommand": null,
+  "postAttachCommand": null,
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        // Add any VS Code extensions you want in every codespace
+      ]
+    }
+  }
+}
