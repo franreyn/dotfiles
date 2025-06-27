@@ -1,7 +1,9 @@
 {
   "name": "My Default Codespace",
-  // You can specify a default image if you have a preference
-  "image": "mcr.microsoft.com/devcontainers/universal:2",
+
+  // You can specify a default `image` if you have a preference  
+  //// "image": "mcr.microsoft.com/devcontainers/universal:2", // a large, multi-language image that contains runtimes and SDKs for many popular languages, 
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:22", // for JavaScript and TypeScript development using the Node.js runtime.
 
   // Explicitly set lifecycle commands to null or an empty string
   // to ensure no default scripts from the base image are run.
