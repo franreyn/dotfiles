@@ -1,0 +1,56 @@
+{
+  //================================================================
+  // General Editor Look & Feel
+  //================================================================
+  "workbench.colorTheme": "Default Dark Modern", // A great built-in dark theme. Others: "Monokai", "Solarized Dark".
+  "workbench.startupEditor": "none", // Starts VS Code with a blank slate instead of the welcome page.
+
+  //================================================================
+  // Text Editor & Typing Experience
+  //================================================================
+  "editor.fontFamily": "'JetBrains Mono', 'Fira Code', 'Cascadia Code', Menlo, Monaco, 'Courier New', monospace", // Use a coding font with ligatures. VS Code will try them in order.
+  "editor.fontSize": 16, // Adjust to your preference.
+  "editor.fontLigatures": false, // Makes =>, !=, ===, etc. look like single, clean symbols. Requires a font that supports it (like the ones above).
+  "editor.tabSize": 4, // A common standard for web development.
+  "editor.insertSpaces": true, // Pressing Tab inserts spaces, not a tab character.
+  "editor.cursorStyle": "line", // Style of the cursor. Others: "block", "underline".
+  "editor.cursorBlinking": "smooth", // A calmer blinking cursor. Others: "blink", "phase", "expand".
+  "editor.minimap.enabled": true, // The code overview on the right side. Set to false to save space.
+  "editor.rulers": [80, 120], // Puts vertical lines at character 80 and 120 to encourage readable line lengths.
+  
+  //================================================================
+  // File & Explorer Management
+  //================================================================
+  "explorer.compactFolders": false, // Collapses single-folder chains in the explorer (e.g., src/app/components becomes one line).
+  "files.autoSave": "off", // Automatically saves files when you click outside the editor window. A life-saver. Others: "off", "afterDelay", onFocusChange", onWindowChange".
+  "files.trimTrailingWhitespace": false, // Automatically removes whitespace from the end of lines when you save. Keeps code clean.
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true,
+    "**/node_modules": true, // Hides the giant node_modules folder from the explorer.
+    "**/bower_components": true
+  },
+
+  //================================================================
+  // Git Integration
+  //================================================================
+  "git.autofetch": false, // Your original setting to prevent automatic fetches.
+  "git.confirmSync": false, // Set to true if you want VS Code to ask for confirmation before running `git sync`.
+  "git.enableSmartCommit": false, // Commits all tracked changes when there are no staged changes (a quick "commit all").
+
+  //================================================================
+  // Integrated Terminal Settings
+  //================================================================
+  "terminal.integrated.fontSize": 13,
+  "terminal.integrated.fontFamily": "monospace", // You can set this to your editor font or leave as monospace for a classic terminal feel.
+  "terminal.integrated.defaultProfile.linux": "bash", // Since Codespaces runs on Linux, this sets the default shell. `zsh` is another option.
+
+  //================================================================
+  // Code Formatting (Requires a Formatter Extension)
+  //================================================================
+  "editor.formatOnSave": false, // The single most important setting for consistent code! Automatically formats your code on every save.
+}
